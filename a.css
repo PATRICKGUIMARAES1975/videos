@@ -1,0 +1,22 @@
+img{
+
+    width: 90px;
+    height: 90px;
+}
+
+.media{
+
+    width: 100px;
+    height: 100px;
+}
+
+.container{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.data{
+    display: flex;
+    gap:4px;
+}

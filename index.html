@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+
+   
+
+    <script src="https://cdn.jsdelivr.net/gh/brunoalbim/devtools-detect/index.js"></script>
+    <script>
+        document.addEventListener('contextmenu', event => event.preventDefault());/*bloquear botao direito mouse*/
+    </script>
+  
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" language="javascript"> $(function () { $(this).bind("contextmenu", function (e) { e.preventDefault(); }); }); </script>
+   
+   
+   <script>
+
+</script>
+
+<script>
+    document.onkeypress = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+        return false;
+        }
+        }
+        
+        document.onmousedown = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+        return false;
+        }
+        }
+        document.onkeydown = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+        return false;
+        }
+        }
+    </script>
+<script>
+
+document.onkeypress = function (event2) {
+    event2 = (event2 || window.event2);
+    if (event2.keyCode == 85) {
+    return false;
+    }
+    }
+
+    document.onmousedown = function (event2) {
+    event2 = (event2 || window.event2);
+    if (event2.keyCode == 85) {
+    return false;
+    }
+    }
+
+    document.onkeydown = function (event2) {
+    event2 = (event2 || window.event2);
+    if (event2.keyCode == 85) {
+    return false;
+    }
+    }
+
+</script>
+</head>
+
+<body>
+    <img src="https://counter6.optistats.ovh/private/webcontadores.php?c=u63btrxuwsc16x1jdqm3qhx3srzqhtuz" border="0" title="" alt="contador de visitas html"></a>
+    <!--<div class="box">
+        
+        <div class="img1">
+          <img src="miniey.png" alt="">
+        </div>
+        
+
+        <div class="img2">
+            <img src="mikeyy.png" alt="">
+          </div>
+          
+        
+    </div>-->
+
+
+
+    
+    <form>
+       
+        <h3>LOGIN</h3>
+        <input type="text" placeholder="Login" id="login">
+        <input type="password" placeholder="Senha" id="senha">
+        <input type="submit" onclick="logar(); return false">
+
+    </form>
+
+
+    <script>
+
+
+        function logar(){
+
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+
+            if(login == "admin" && senha == "250402"){
+                alert('Sucesso');
+                location.href = "home.html";
+            }else{
+                alert('Usuario ou senha incorretos');
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>

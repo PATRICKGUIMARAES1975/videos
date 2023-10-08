@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="a.css">
+</head>
+<body>
+    <script>
+        var Xmas = new Date("July 25, 2009 23:15:00");
+        var atual = new Date();
+        var year = Xmas.getYear(); // returns 95
+        var year1 = atual.getYear();
+        var dif = year1 - year;
+         function oMsg3() { document.getElementById("pmsg3b").innerHTML = dif;
+            }
+            window.onload = function() {
+              oMsg3();
+            };
+        </script>
+
+        
+        <div class="data">
+            <p>Há</p><p id="pmsg3b"></p><p>anos.</p>
+        
+        </div>
+</body>
+</html>
+

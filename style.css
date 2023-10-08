@@ -1,0 +1,491 @@
+*{
+ 
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+
+.barra-top {
+
+display:flex;
+width:100%;
+height:115px;
+max-width: 1450px;
+
+margin:35px;
+
+font-size: 20px ;
+box-shadow: 20px 20px 10px black;
+
+}
+
+.barra-top-fundo img{
+  position: absolute;
+  width: 1450px;
+  height: 115px;
+  opacity: 0.7;
+}
+
+.barra-top-fundo1 img{
+  position: absolute;
+  width: 1450px;
+  height: 115px;
+ 
+}
+
+.container{
+display: flex;
+
+}
+
+
+.rodape-video{
+
+  background-color: #0000000d;
+  border-radius: 15px;
+  width:853px;
+  height:215px;
+}
+
+.contador p {
+  
+  padding: 5px;
+
+}
+.contador {
+align-items: center;
+  display: flex;
+  gap:6;
+  padding: 10px;
+}
+.contador img{
+  width:70px;
+  height:13px;
+}
+
+ 
+
+
+.data-titulo{
+  display: flex;
+  gap:4px;
+  
+  align-items: center;
+}
+
+.data-titulo p{
+ font-size: 23px;
+ margin:2px;
+ gap:15px;
+ color:blue;
+ 
+}
+
+
+.patrickDev{
+  display: flex;
+  gap:4px;
+  
+
+  align-items: center;
+}
+
+.patrickDev img{
+  display: flex;
+  gap:4px;
+  width:50px ;
+  height: 50px;
+  border-radius: 30px;
+  border: 3px solid black;
+  align-items: center;
+  
+}
+
+
+.lateral {
+  width: 700px;
+  display:flex;
+  flex-wrap: wrap;
+  border: 2px solid rgb(243, 241, 241);
+  margin:30px;
+  pad:30px;
+  border-radius: 25px;
+  background-color: rgb(243, 241, 241);
+
+}
+
+.lateral-b {
+  width: 700px;
+  display:flex;
+  flex-wrap: wrap;
+  border: 2px solid rgb(243, 241, 241);
+  margin:30px;
+  pad:30px;
+  border-radius: 25px;
+  background-color: rgb(243, 241, 241);
+
+}
+
+.small {
+display:flex;
+align-items: center;
+text-decoration: none;
+color:#606060;
+}
+
+
+h1{
+  word-break: break-word;
+  font-family: "YouTube Sans","Roboto",sans-serif;
+  font-size: 20px;
+  line-height: 2.8rem;
+  font-weight: 400;
+  color:black;
+}
+a span{
+  color:black;
+  font-weight: bold;
+}
+
+a img{
+  border-radius: 25px;
+  margin:10px;
+  width:250px ;
+  height: 188px;
+}
+
+
+.lateral img:hover{
+
+  border: 2px solid black;
+  border-radius: 25px;
+}
+
+.lateral-b img:hover{
+
+  border: 2px solid black;
+  border-radius: 25px;
+}
+
+.videos1{
+  display:flex;
+  flex-direction: column;
+ 
+  border-radius: 25px;
+  width:850px ;
+  height: auto;
+  margin:30px;
+}
+
+  iframe{
+
+    border-radius: 25px;
+  }
+
+.div-video{
+  
+  width:900px;
+  height:480px ;
+}
+
+
+  .img1 img{
+position: absolute;
+/* vanessa*/
+   top:-28px;
+    width: 290px;
+    height: 200px;
+   
+    
+
+    animation-name: minie;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+  }
+
+  @keyframes minie{
+  /*1600 - 850*/
+    from{transform: translateX(1600px);} 
+    to {transform: translateX(500px);}
+}
+
+
+
+  .img2 img{
+    /* larissa*/
+    position: absolute;
+    top:-20px;
+    width: 290px;
+    height: 190px;
+
+    animation-name: mikey;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+  }
+
+
+  .contador p {
+  
+    padding: 2px;
+  
+  }
+  .contador {
+  align-items: center;
+    display: flex;
+    gap:2;
+    padding: 1px;
+  }
+  .contador img{
+    width:50px;
+    height:13px;
+  }
+
+  @keyframes mikey{
+
+     /*-1600 - -990*/
+    from{transform: translateX(-1600px);} 
+    to {transform: translateX(690px);}
+}
+
+
+
+
+/* =============inicio da area de animação texto patrick */
+
+section.descricao h2 { /* posicionamento texto patrick.dev na tela */
+        
+        
+  
+  color: rgb(24, 139, 233);
+  font-size: 30px;
+}
+section.descricao h2 > span{
+  
+  color: chocolate;
+  text-shadow: 0 0 15px chocolate;
+  }
+
+.line{ /* configuração linha texto patrick */
+
+  
+  border-right: 2px solid black;
+  
+  white-space: nowrap; /* nao quebra linha*/
+  overflow: hidden; /*esconder o texto*/
+  }
+  
+  .cursorPisca{ /* configuração pisca cursor */
+  
+      animation:pisca 600ms infinite normal, digita 4s steps(25) 1s normal both infinite;
+  }
+  
+  @keyframes digita{ /* animacao digita patrick regis guim*/
+      
+      from{
+  
+          width: 0;
+          }
+      
+          to{
+  
+          width: 6em; /** controla o acampnhamento da digitação e o recuo do cursor*/
+      
+          }
+  
+  
+  }
+  
+  @keyframes pisca{ /* pisca o cursor*/
+  
+      from{
+  
+      border-right-color: black;
+      }
+  
+      to{
+      border-right-color: transparent;
+  
+      }
+  }
+  
+  /* ================fimda area de animação texto patrick */
+
+/* INICIO MOBILE === 768PX */
+
+
+  @media only screen and (max-width:760px) {
+
+
+    .barra-top {
+
+      display:flex;
+      
+      width:410px;
+      height:100px;
+      
+    
+      margin:1px;
+      
+      font-size: 20px ;
+      box-shadow: 20px 20px 10px blanchedalmond;
+      
+      }
+      
+      .barra-top-fundo img{
+        position: absolute;
+        width:410px;
+        height: 100px;
+        opacity: 0.7;
+      
+      }
+      
+      .barra-top-fundo1 img{
+        position: absolute;
+        width: 410px;
+        height: 100px;
+       
+      }
+     
+
+      .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+
+        .videos1{
+          display:flex;
+          align-items: center;
+          width:430px;
+          height: auto;
+          margin:-1px;
+        }
+        
+.data-titulo h1{
+
+  font-size: 18px;
+}
+
+              
+
+         iframe{
+          border-radius: 1px;
+          width:430px;
+          height:260px;
+        }
+.data-titulo{
+  margin:19px;
+ 
+}
+
+.rodape-video{
+width:400px;
+height: auto;
+  
+}
+.rodape-video p{
+  margin:5px;
+  justify-content: center;
+  font-size: 12px;
+  }
+
+  .lateral {
+    justify-content: space-between;
+    
+    width: 430px;
+    display:flex;
+    flex-wrap: wrap;
+    border: 2px solid rgb(243, 241, 241);
+    margin:30px;
+    pad:30px;
+    border-radius: 25px;
+    background-color: rgb(243, 241, 241);
+   
+  }
+
+
+
+  .lateral-b {
+    width: 430px;
+    display:flex;
+    flex-wrap: wrap;
+    border: 2px solid rgb(243, 241, 241);
+    margin:30px;
+    pad:30px;
+    border-radius: 25px;
+    background-color: rgb(243, 241, 241);
+  
+  }
+
+  a img{
+    justify-content: space-between;
+    border-radius: 25px;
+    margin:10px;
+    width:190px ;
+    height:150px;
+  }
+        
+
+/* ANIMAÇÃO  VANESSA E LARISSA CRUZANDO IMAGENS */
+
+.img1b img{
+  position: absolute;
+  /* vanessa*/
+     top:-15px;
+      width: 180px;
+      height: 120px;
+     
+      
+  
+      animation-name: minie;
+          animation-duration: 2s;
+          animation-fill-mode: forwards;
+    }
+  
+
+        .img1 img{
+          position: absolute;
+          /* vanessa*/
+             top:-30px;
+              width: 190px;
+              height: 148px;
+             
+              
+          
+              animation-name: minie;
+                  animation-duration: 2s;
+                  animation-fill-mode: forwards;
+            }
+          
+            @keyframes minie{
+            /*1600 - 850*/
+              from{transform: translateX(400px);} 
+              to {transform: translateX(10px);}
+          }
+          
+          
+          
+            .img2 img{
+              /* larissa*/
+              position: absolute;
+              top:-23px;
+              width: 190px;
+              height: 140px;
+          
+              animation-name: mikey;
+                  animation-duration: 2s;
+                  animation-fill-mode: forwards;
+            }
+
+
+            @keyframes mikey{
+
+              /*-1600 - -990*/
+             from{transform: translateX(-400px);} 
+             to {transform: translateX(100px);}
+         }
+/*FIM ANIMAÇÃO VANESSA E LARISSA */
+
+
+  } /* FINAL MOBILE === 768PX */

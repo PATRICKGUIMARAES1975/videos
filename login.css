@@ -1,0 +1,70 @@
+
+
+        *{
+            box-sizing: border-box;
+          
+        }
+
+
+        body{
+            background-image: url("disney.jpg");
+           background-size: cover;
+        }
+
+        form{
+            border: 2px solid white;
+            border-radius: 15px;
+            background-color: blue;
+            width: 300px;
+            margin: 200px auto;
+            text-align: center;
+        }
+
+        input{
+            display: block;
+            margin: 10px auto;
+            width: 250px;
+            height: 30px;
+        }
+
+        H3{
+
+            color: brown;
+        }
+
+.box{
+
+    display:flex;
+}
+/*
+  .img1 img{
+    width: 400px;
+    height: 300px;
+
+    animation-name: minie;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+  }
+
+  @keyframes minie{
+    from{transform: translateX(1600px);} 
+    to {transform: translateX(-1px);}
+}
+
+
+
+  .img2 img{
+
+
+    width: 250px;
+    height: 350px;
+
+    animation-name: mikey;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+  }
+
+  @keyframes mikey{
+    from{transform: translateX(-1000px);} 
+    to {transform: translateX(-80px);}
+}*/
